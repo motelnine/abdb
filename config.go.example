@@ -1,0 +1,23 @@
+package ABDB
+
+type Configuration struct {
+	Reader Connection
+	
+}
+
+type Connection struct {
+	Host     string
+	Database string
+	User     string
+	Password string
+}
+
+var config = Configuration{
+	Reader: Connection{
+		Host: "",
+		Database: "",
+		User: "",
+		Password: "",
+	},
+}
+
